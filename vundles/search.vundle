@@ -1,0 +1,8 @@
+Bundle "justinmk/vim-sneak"
+"Bundle "rking/ag.vim"
+"moving to ack.vim ag.vim is deprecated"
+Bundle "mileszs/ack.vim"
+Bundle "vim-scripts/IndexedSearch"
+Bundle "nelstrom/vim-visual-star-search"
+Bundle "skwp/greplace.vim"
+Bundle "Lokaltog/vim-easymotion"
