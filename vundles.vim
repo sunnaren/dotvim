@@ -29,7 +29,8 @@ if count(g:vundles, 'general')
   Bundle 'Raimondi/delimitMate'
 
   "Lean & mean status/tabline for vim that's light as air."
-  Bundle 'bling/vim-airline'
+  Bundle 'vim-airline/vim-airline'
+  Bundle 'vim-airline/vim-airline-themes'
 
   "Desert color scheme"
   Bundle 'brafales/vim-desert256'
