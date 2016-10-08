@@ -57,7 +57,7 @@ if exists('g:loaded_neocomplcache')
   inoremap <expr><C-y>  neocomplcache#close_popup()
   inoremap <expr><C-e>  neocomplcache#cancel_popup()
   " Close popup by <Space>.
-  "inoremap <expr><Space> pumvisible() ? neocomplcache#close_popup() : "\<Space>"
+  inoremap <expr><Space> pumvisible() ? neocomplcache#close_popup() : "\<Space>"
 
   " For cursor moving in insert mode(Not recommended)
   "inoremap <expr><Left>  neocomplcache#close_popup() . "\<Left>"
@@ -70,7 +70,7 @@ if exists('g:loaded_neocomplcache')
   "let g:neocomplcache_enable_insert_char_pre = 1
 
   " AutoComplPop like behavior.
-  "let g:neocomplcache_enable_auto_select = 1
+  let g:neocomplcache_enable_auto_select = 1
 
   " Shell like behavior(not recommended).
   "set completeopt+=longest
