@@ -45,9 +45,12 @@ set completeopt=menuone,preview
 set cinoptions=:0,(s,u0,U1,g0,t0 " some indentation options ':h cinoptions' for details
 set modelines=5         " number of lines to check for vim: directives at the start/end of file
 set autoindent          " automatically indent new line
-
-set ts=4                " number of spaces in a tab
-set sw=4                " number of spaces for indent
+set list
+set listchars=tab:›\ ,trail:•,extends:#,nbsp:. " Highlight problematic whitespace
+set guifont=Source\ Code\ Pro\ Italic:h16
+set wildmenu            " Show list instead of just completing
+set ts=2                " number of spaces in a tab
+set sw=2                " number of spaces for indent
 set et                  " expand tabs into spaces
 
 " mouse settings
@@ -78,13 +81,18 @@ if has("folding")
   set foldcolumn=0        " columns for folding
   set foldmethod=indent
   set foldlevel=9
-  set nofoldenable        "dont fold by default "
+  set foldenable          " fold code by default "
 endif
 
 if has("user_commands")
   let mapleader = ","
   let maplocalleader = "\\"
 endif
+
+" Formatting
+set nojoinspaces                " Prevents inserting two spaces after punctuation on a join (J)
+set splitright                  " Puts new vsplit windows to the right of the current
+set splitbelow                  " Puts new split windows to the bottom of the current
 
 " Remember last position in file
 if has("autocmd")
