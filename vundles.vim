@@ -46,13 +46,11 @@ if count(g:vundles, 'BeCool')
     Bundle 'vim-scripts/SearchComplete'
 endif
 
-vim-scripts/LanguageTool
-
-if count(g:vundles, 'hg')
- if executable('hg')
-    Bundle 'k-takata/hg-vim'
-  endif
+if count(g:vundles, 'AuthoringTools')
+    Bundle 'vim-scripts/LanguageTool'
 endif
+
+
 " General Programming
 if count(g:vundles, 'programming')
   Bundle 'godlygeek/tabular'
