@@ -55,7 +55,7 @@ endif
 " General Programming
 if count(g:vundles, 'programming')
   "Easy commenting with Nerd commenter
-  Plug 'scrooloose/nerdcommenter'
+  Bundle 'scrooloose/nerdcommenter'
 
   "Aligning text with Tabular.vim"
   Bundle 'godlygeek/tabular'
