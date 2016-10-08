@@ -11,7 +11,7 @@
 filetype off
 
 set rtp+=~/.vim/bundle/Vundle.vim
-"set rtp+=~/.vim/vundles/ "Submodules
+set rtp+=~/.vim/vundles/ "Submodules
 call vundle#begin()
 
 

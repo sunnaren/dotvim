@@ -12,5 +12,4 @@ for fpath in split(globpath(vimsettings, '*.vim'), '\n')
   endif
 
   echo fpath
-  exe 'source' fpath
 endfor
