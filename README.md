@@ -18,7 +18,7 @@ Edit `vimrc`
 
 Configure any additional plugins in your copy of `vimrc`
 
-    Bundle 'reponame'
+    Plugin 'reponame'
 
 And enable *vundles* to install, see plugin/settings/README.md
 
