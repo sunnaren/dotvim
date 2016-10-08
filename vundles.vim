@@ -7,26 +7,37 @@ Bundle 'chriskempson/base16-vim'
 " General
 if count(g:vundles, 'general')
   Bundle 'scrooloose/nerdtree'
+  "The YankRing plugin allows the user to configure the number of yanked, deleted and changed text. "
   Bundle 'YankRing.vim'
-  let g:yankring_history_dir = $HOME.'/.vim/'
-  let g:yankring_history_file = '.yankring_history'
+
   Bundle 'tpope/vim-repeat'
-  ""Bundle 'AutoClose'
+  "Bundle 'AutoClose'
+
   Bundle 'kien/ctrlp.vim'
   Bundle 'jistr/vim-nerdtree-tabs'
-  Bundle 'sudo.vim'
+
+  "This script eases use of vim with sudo by adding the ability to
+  Bundle 'vim-scripts/sudo.vim'
+
+  "This plugin causes all trailing whitespace to be highlighted in red."
   Bundle 'bronson/vim-trailing-whitespace'
+
+  "Visualize undo-tree"
   Bundle 'mbbill/undotree'
-  Bundle 'mhinz/vim-signify'
+
+  "provides automatic closing of quotes, parenthesis, brackets, etc."
   Bundle 'Raimondi/delimitMate'
+
+  "Lean & mean status/tabline for vim that's light as air."
   Bundle 'bling/vim-airline'
-  Bundle 'rodjek/vim-puppet'
-  "color scheme"
+
+  "Desert color scheme"
   Bundle 'brafales/vim-desert256'
 endif
 
 if count(g:vundles, 'git')
   if executable('git')
+    Bundle 'airblade/vim-gitgutter'
     Bundle 'tpope/vim-fugitive'
   endif
 endif
@@ -35,6 +46,7 @@ if count(g:vundles, 'BeCool')
     Bundle 'vim-scripts/SearchComplete'
 endif
 
+vim-scripts/LanguageTool
 
 if count(g:vundles, 'hg')
  if executable('hg')
