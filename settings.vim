@@ -10,6 +10,4 @@ for fpath in split(globpath(vimsettings, '*.vim'), '\n')
   if (fpath == expand(vimsettings) . "/yadr-keymap-linux.vim") && uname[:4] !=? "linux"
     continue " skip linux mappings for mac
   endif
-
-  echo fpath
 endfor
