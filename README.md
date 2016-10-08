@@ -102,6 +102,7 @@ General configuration
 * `+`, `-` - easily inc/decrement integers
 * `,W` - remove trailing spaces
 * `Ctrl-g`/`h`/`j`/`k` - simplified split panes navigation
+* `F1 num` follwed by a buffer number or name fragment to jump to it.
 
 Check out the 'plugin/settings/\*.vim' for more...
 

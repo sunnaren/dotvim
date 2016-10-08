@@ -10,7 +10,7 @@ if count(g:vundles, 'general')
   Bundle 'YankRing.vim'
   let g:yankring_history_dir = $HOME.'/.vim/'
   let g:yankring_history_file = '.yankring_history'
-  ""Bundle 'tpope/vim-repeat'
+  Bundle 'tpope/vim-repeat'
   ""Bundle 'AutoClose'
   Bundle 'kien/ctrlp.vim'
   Bundle 'jistr/vim-nerdtree-tabs'
@@ -21,6 +21,8 @@ if count(g:vundles, 'general')
   Bundle 'Raimondi/delimitMate'
   Bundle 'bling/vim-airline'
   Bundle 'rodjek/vim-puppet'
+  "color scheme"
+  Bundle 'brafales/vim-desert256'
 endif
 
 if count(g:vundles, 'git')
@@ -28,6 +30,11 @@ if count(g:vundles, 'git')
     Bundle 'tpope/vim-fugitive'
   endif
 endif
+
+if count(g:vundles, 'BeCool')
+    Bundle 'vim-scripts/SearchComplete'
+endif
+
 
 if count(g:vundles, 'hg')
  if executable('hg')
@@ -54,7 +61,7 @@ if count(g:vundles, 'completion')
     Bundle 'Shougo/neosnippet-snippets'
     Bundle 'scrooloose/snipmate-snippets'
     Bundle 'honza/vim-snippets'
-    Bundle 'Indent-Guides'
+    Bundle 'nathanaelkane/vim-indent-guides'
 endif
 
 " PHP
