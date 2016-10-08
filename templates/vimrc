@@ -1,12 +1,19 @@
+" Call dotvim
+source ~/.vim/dotvim.vim
+
+if has("user_commands")
+  set nocompatible
+  filetype off
+  set rtp+=~/.vim/bundle/Vundle.vim
+  call vundle#rc()
+  " Load 'vundles'
+  source ~/.vim/vundles.vim
+  filetype on
+endif
+
 " Use Vim settings, rather then Vi settings (much better!).
 " This must be first, because it changes other options as a side effect.
 set nocompatible
-
-" TODO: this may not be in the correct place. It is intended to allow overriding <Leader>.
-" source ~/.vimrc.before if it exists.
-if filereadable(expand("~/.vimrc.before"))
-  source ~/.vimrc.before
-endif
 
 " ================ General Config ====================
 
@@ -116,21 +123,7 @@ set smartcase       " ...unless we type a capital
 " ================ Custom Settings ========================
 so ~/.vim/settings.vim
 
-" Call dotvim
-source ~/.vim/dotvim.vim
 
-if has("user_commands")
-  set nocompatible
-  filetype off
-  set rtp+=~/.vim/bundle/vundle/
-  call vundle#rc()
-  let g:vundles=['general', 'git', 'programming', 'completion', 'Javascript']
-  "let g:neocomplcache_enable_at_startup = 1
-  " Load 'vundles'
-  source ~/.vim/vundles.vim
-  " Add extra bundles here...
-  " Bundle 'reponame'
-endif
 
 " Override colorscheme from base16
 let g:dotvim_colorscheme = 'base16-default-dark'
