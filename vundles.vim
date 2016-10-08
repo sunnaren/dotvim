@@ -48,15 +48,22 @@ endif
 
 if count(g:vundles, 'AuthoringTools')
     Bundle 'vim-scripts/LanguageTool'
+    Bundle 'vimwiki/vimwiki'
 endif
 
 
 " General Programming
 if count(g:vundles, 'programming')
+  "Easy commenting with Nerd commenter
+  Plug 'scrooloose/nerdcommenter'
+
+  "Aligning text with Tabular.vim"
   Bundle 'godlygeek/tabular'
+
   if executable('ack')
     Bundle 'mileszs/ack.vim'
   endif
+
   if v:version > 700
     Bundle 'scrooloose/syntastic'
     if executable('ctags')
@@ -110,7 +117,6 @@ if count(g:vundles, 'misc')
   Bundle 'spf13/vim-preview'
   Bundle 'tpope/vim-cucumber'
   Bundle 'markcornick/vim-vagrant'
-  Bundle 'Puppet-Syntax-Highlighting'
   Bundle 'ekalinin/Dockerfile.vim'
   if v:version > 701
     Bundle 'zhaocai/GoldenView.Vim'
