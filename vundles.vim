@@ -1,11 +1,3 @@
-"
-" dotphiles : https://github.com/dotphiles/dotphiles
-"
-" Essential vim plugins!
-"
-" Authors:
-"   Ben O'Hara <bohara@gmail.com>
-"
 
 " Vundle itself
 Bundle 'gmarik/vundle'

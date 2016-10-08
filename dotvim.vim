@@ -116,3 +116,5 @@ if has("user_commands")
   endif
 endif
 
+"Base 16 colours"
+let base16colorspace=256 " Access colors present in 256 colorspace
