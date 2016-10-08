@@ -1,8 +1,8 @@
-Plugin "justinmk/vim-sneak"
-"Plugin "rking/ag.vim"
-"moving to ack.vim ag.vim is deprecated"
-Plugin "mileszs/ack.vim"
-Plugin "vim-scripts/IndexedSearch"
-Plugin "nelstrom/vim-visual-star-search"
-Plugin "skwp/greplace.vim"
-Plugin "Lokaltog/vim-easymotion"
+Plugin 'justinmk/vim-sneak'
+'Plugin 'rking/ag.vim'
+'moving to ack.vim ag.vim is deprecated'
+Plugin 'mileszs/ack.vim'
+Plugin 'vim-scripts/IndexedSearch'
+Plugin 'nelstrom/vim-visual-star-search'
+Plugin 'skwp/greplace.vim'
+Plugin 'Lokaltog/vim-easymotion'
