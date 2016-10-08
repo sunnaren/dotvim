@@ -73,7 +73,7 @@ endif
 endif
 
 if count(g:vundles, 'completion')
-    Bundle 'Shougo/neocomplcache'
+    Bundle 'Shougo/neocomplete'
     Bundle 'Shougo/neosnippet'
     Bundle 'Shougo/neosnippet-snippets'
     Bundle 'scrooloose/snipmate-snippets'
