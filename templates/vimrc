@@ -118,4 +118,4 @@ set smartcase       " ...unless we type a capital
 
 
 " Override colorscheme from base16
-colorscheme = 'base16-default-dark'
+colorscheme = base16-default-dark
