@@ -4,5 +4,5 @@ Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'xolox/vim-misc'
 Plugin 'xolox/vim-session'
 
-'vim wiki. An awesome notes taking app
+"vim wiki. An awesome notes taking app
 Plugin 'vimwiki/vimwiki'

@@ -18,12 +18,12 @@ Plugin 'gmarik/vundle'
 " This reduces churn and makes it easier to fork. See
 " ~/.vim/vundles/ to edit them:
 "runtime ruby.vundle
-"runtime languages.vundle
-"runtime git.vundle
-"runtime appearance.vundle
-"runtime textobjects.vundle
-"runtime search.vundle
-"runtime project.vundle
+runtime languages.vundle
+runtime git.vundle
+runtime appearance.vundle
+runtime textobjects.vundle
+runtime search.vundle
+runtime project.vundle
 runtime vim-improvements.vundle
 
 " All of your Plugins must be added before the following line

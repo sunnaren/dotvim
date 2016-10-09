@@ -1,16 +1,6 @@
 " Call dotvim
 source ~/.vim/dotvim.vim
 
-if has("user_commands")
-  set nocompatible
-  filetype off
-  set rtp+=~/.vim/bundle/Vundle.vim
-  call vundle#rc()
-  " Load 'vundles'
-  source ~/.vim/vundles.vim
-  filetype on
-endif
-
 " Use Vim settings, rather then Vi settings (much better!).
 " This must be first, because it changes other options as a side effect.
 set nocompatible
@@ -39,6 +29,9 @@ syntax on
 " The mapleader has to be set before vundle starts loading all 
 " the plugins.
 let mapleader=","
+
+" =============== Load settings ===============
+so ~/.vim/settings.vim
 
 " =============== Vundle Initialization ===============
 " This loads all the plugins specified in ~/.vim/vundles.vim
@@ -121,12 +114,8 @@ set ignorecase      " Ignore case when searching...
 set smartcase       " ...unless we type a capital
 
 " ================ Custom Settings ========================
-so ~/.vim/settings.vim
 
 
 
 " Override colorscheme from base16
-let g:dotvim_colorscheme = 'base16-default-dark'
-
-" Customize to your needs...
-
+colorscheme = 'base16-default-dark'
